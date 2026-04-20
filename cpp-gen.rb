@@ -5,21 +5,21 @@
 class CppGen < Formula
   desc "Modern C++ project generator with CMake, package managers, IDE configurations and development tools"
   homepage "https://github.com/matpdev/cpp-gen"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/matpdev/cpp-gen/releases/download/v0.1.1/cpp-gen_0.1.1_darwin_amd64.tar.gz"
-      sha256 "fc51317f077e1571fa65ba25fbd85cf1d9e1e97d0f86c2ddda9775587d13faf1"
+      url "https://github.com/matpdev/cpp-gen/releases/download/v0.2.0/cpp-gen_0.2.0_darwin_amd64.tar.gz"
+      sha256 "7c8ae3a17b4a4802757ae23cc504b05ddb9e1d41cff9527f0220adc3fadf6c43"
 
       define_method(:install) do
         bin.install "cpp-gen"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/matpdev/cpp-gen/releases/download/v0.1.1/cpp-gen_0.1.1_darwin_arm64.tar.gz"
-      sha256 "6e1cc1e819dad9718e7eaed6daf224cf024fb17321b32af5a58bf3621dfdf4aa"
+      url "https://github.com/matpdev/cpp-gen/releases/download/v0.2.0/cpp-gen_0.2.0_darwin_arm64.tar.gz"
+      sha256 "a149780749e916103a0983a93267a18ebe4348744fde52999616b10868446e75"
 
       define_method(:install) do
         bin.install "cpp-gen"
@@ -29,15 +29,15 @@ class CppGen < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matpdev/cpp-gen/releases/download/v0.1.1/cpp-gen_0.1.1_linux_amd64.tar.gz"
-      sha256 "0e577d4b74365697dee147d9b462330cbc2cd18727878850ccccf38a91a1a856"
+      url "https://github.com/matpdev/cpp-gen/releases/download/v0.2.0/cpp-gen_0.2.0_linux_amd64.tar.gz"
+      sha256 "accc005f65fe1d828e2d93bfd07cf17e8747c21e20990c848dba7aaecfa18cdc"
       define_method(:install) do
         bin.install "cpp-gen"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matpdev/cpp-gen/releases/download/v0.1.1/cpp-gen_0.1.1_linux_arm64.tar.gz"
-      sha256 "594f73b8049c54cc275673fad37e9714d0a299c64b448200632a6319b5929e79"
+      url "https://github.com/matpdev/cpp-gen/releases/download/v0.2.0/cpp-gen_0.2.0_linux_arm64.tar.gz"
+      sha256 "9f9538060fc1d47b7faf312346231ca5883d9755cb18f0b86b5a126ef315c7e0"
       define_method(:install) do
         bin.install "cpp-gen"
       end
